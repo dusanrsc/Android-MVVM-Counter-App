@@ -13,3 +13,7 @@ val Pink40 = Color(0xFF7D5260)
 val NeutralCounterFontColor = Color(0xFF00FF00)
 val DecrementButtonBackgroundColor = Color(0xFFFF0000)
 val IncrementButtonBackgroundColor = Color(0xFF0000FF)
+
+val NeutralCounterStepFontColor = Color(0xFF00A000)
+val DecrementCounterStepFontColor = Color(0xFFA00000)
+val IncrementCounterStepFontColor = Color(0xFF0000A0)
