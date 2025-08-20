@@ -3,40 +3,51 @@ package com.infinitysoftware.mvvm_getdata.viewmodel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.infinitysoftware.mvvm_counter.model.CounterModel
 
 class CounterViewModel: ViewModel() {
-    private val _count = MutableLiveData(0)
-    private val _countStep = MutableLiveData(1)
 
-    val count: LiveData<Int> = _count
-    val countStep: LiveData<Int> = _countStep
+    private var counterModel = CounterModel()
+    private val _counter = MutableLiveData(counterModel)
+    val counter: LiveData<CounterModel> = _counter
 
     fun counterIncrement() {
-        val currentCountValue = _count.value ?: 0
-        _count.value = currentCountValue + countStep.value
+        val newCount = counterModel.count + counterModel.countStep
+        counterModel = counterModel.copy(count = newCount)
+        _counter.value = counterModel
     }
 
     fun counterDecrement() {
-        val currentCountValue = _count.value ?: 0
-        _count.value = currentCountValue - countStep.value
+        val newCount = counterModel.count - counterModel.countStep
+        counterModel = counterModel.copy(count = newCount)
+        _counter.value = counterModel
     }
 
     fun counterReset() {
-        _count.value = 0
+        counterModel = counterModel.copy(count = 0)
+        _counter.value = counterModel
     }
 
     fun counterStepIncrement() {
-        val currentCountStepValue = _countStep.value ?: 0
-        _countStep.value = currentCountStepValue + 1
+        val newStep = (counterModel.countStep + 1).coerceAtMost(10000)
+        counterModel = counterModel.copy(countStep = newStep)
+        _counter.value = counterModel
     }
 
     fun counterStepDecrement() {
-        val currentCountStepValue = _countStep.value ?: 0
-        val currentCountStepBound = currentCountStepValue - 1
-        _countStep.value = if (currentCountStepBound < 1) 1 else currentCountStepBound
+        val newStep = (counterModel.countStep - 1).coerceAtLeast(1)
+        counterModel = counterModel.copy(countStep = newStep)
+        _counter.value = counterModel
     }
 
     fun counterStepReset() {
-        _countStep.value = 1
+        counterModel = counterModel.copy(countStep = 1)
+        _counter.value = counterModel
+    }
+
+    fun setCountStep(value: Int) {
+        val newStep = value.coerceIn(1, 10000)
+        counterModel = counterModel.copy(countStep = newStep)
+        _counter.value = counterModel
     }
 }
