@@ -3,11 +3,11 @@
 # Screenshots:
 
 <div class="container" align="center">
-  <img width="32%" alt="Screenshot0" src="https://github.com/user-attachments/assets/585ac363-3a58-4564-92a5-10165dd54e8c" />
-  <img width="32%" alt="Screenshot1" src="https://github.com/user-attachments/assets/d05678f5-d4c4-48b8-a525-796d2f261c7c" />
-  <img width="32%" alt="Screenshot2" src="https://github.com/user-attachments/assets/afa81ddc-ca50-44f0-820c-548bdd98f002" />
+  <img width="32%" alt="Screenshot0" src="https://github.com/user-attachments/assets/7f10c3f7-efce-4603-87fe-1bb849f00eec" />
+  <img width="32%" alt="Screenshot1" src="https://github.com/user-attachments/assets/29a7389a-b21e-472c-be4f-fea6cdcd5de3" />
+  <img width="32%" alt="Screenshot2" src="https://github.com/user-attachments/assets/6e0c7b68-6dad-4f5e-b902-51a80c340625" />
   <br/>
-  <img width="97%" alt="Screenshot3" src="https://github.com/user-attachments/assets/b43dda1a-7179-4d29-9b01-a5662c422ddb" />
+  <img width="97%" alt="Screenshot3" src="https://github.com/user-attachments/assets/f4e79e75-8eca-41e5-9c24-393fa6522094" />
 </div>
 
 # MVVM Architecture Diagram:
