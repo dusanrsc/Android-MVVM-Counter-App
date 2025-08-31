@@ -9,8 +9,9 @@
   <img width="19%" alt="Screenshot3" src="https://github.com/user-attachments/assets/4e306cb9-730c-4919-8230-04e3f9a1dc1a" />
   <img width="19%" alt="Screenshot4" src="https://github.com/user-attachments/assets/2bb07c46-e012-409e-a8ca-e3b556622f9a" />
   <br/>
-  <img width="95%" alt="Screenshot5" src="https://github.com/user-attachments/assets/c5828ec1-c6da-4b76-ae10-8a96865ab6c2" />
+  <img width="96%" alt="Screenshot5" src="https://github.com/user-attachments/assets/c5828ec1-c6da-4b76-ae10-8a96865ab6c2" />
 </div>
 
 # MVVM Architecture Diagram:
 <img width="100%" alt="MVVM_Architecture_Diagram" src="https://github.com/user-attachments/assets/691d4f3c-747b-4870-86a9-f9c547740ce8" />
+
